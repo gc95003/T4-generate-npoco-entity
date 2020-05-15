@@ -1,0 +1,14 @@
+svn账号：gucheng  gucheng
+
+
+小程序：https://USER-20190520KW/svn/AppLetWxSvn/
+
+
+
+/admin/default/evindex2014
+adminh 332111
+
+
+
+
+Scaffold-DbContext "Server=USER-20190520KW;Database=electric2014;user id=electricdb;password=888888;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -F
