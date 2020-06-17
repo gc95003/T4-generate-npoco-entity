@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_DealerPromo.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_DealerPromoMetadata))]
+	[MetadataType(typeof(DealerPromoMetadata))]
 	[PrimaryKey("PromoID")]
 	[TableName("[dbo].[T_DealerPromo]")]
     public class T_DealerPromo 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_DealerPromoMetadata{
+		private class DealerPromoMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

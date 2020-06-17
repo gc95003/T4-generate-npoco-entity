@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_VehicleOperator20191227.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_VehicleOperator20191227Metadata))]
+	[MetadataType(typeof(VehicleOperator20191227Metadata))]
 	[PrimaryKey("")]
 	[TableName("[dbo].[T_VehicleOperator20191227]")]
     public class T_VehicleOperator20191227 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_VehicleOperator20191227Metadata{
+		private class VehicleOperator20191227Metadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

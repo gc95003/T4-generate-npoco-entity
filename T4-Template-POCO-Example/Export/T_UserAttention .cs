@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_UserAttention .
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_UserAttention Metadata))]
+	[MetadataType(typeof(UserAttention Metadata))]
 	[PrimaryKey("ConcernID")]
 	[TableName("[dbo].[T_UserAttention ]")]
     public class T_UserAttention  
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_UserAttention Metadata{
+		private class UserAttention Metadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "关注ID")]

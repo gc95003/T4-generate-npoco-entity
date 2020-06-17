@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_TweetAttachment.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_TweetAttachmentMetadata))]
+	[MetadataType(typeof(TweetAttachmentMetadata))]
 	[PrimaryKey("AttachmentID")]
 	[TableName("[dbo].[T_TweetAttachment]")]
     public class T_TweetAttachment 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_TweetAttachmentMetadata{
+		private class TweetAttachmentMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

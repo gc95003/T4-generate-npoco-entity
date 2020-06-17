@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_Company360.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_Company360Metadata))]
+	[MetadataType(typeof(Company360Metadata))]
 	[PrimaryKey("CompanyID")]
 	[TableName("[dbo].[T_Company360]")]
     public class T_Company360 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_Company360Metadata{
+		private class Company360Metadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_Qyml.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_QymlMetadata))]
+	[MetadataType(typeof(QymlMetadata))]
 	[PrimaryKey("ID")]
 	[TableName("[dbo].[T_Qyml]")]
     public class T_Qyml 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_QymlMetadata{
+		private class QymlMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

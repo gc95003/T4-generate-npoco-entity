@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_WZList.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_WZListMetadata))]
+	[MetadataType(typeof(WZListMetadata))]
 	[PrimaryKey("CarNo")]
 	[TableName("[dbo].[T_WZList]")]
     public class T_WZList 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_WZListMetadata{
+		private class WZListMetadata{
 			[StringLength(50, ErrorMessage = "{0}不能超过50个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "车牌号")]

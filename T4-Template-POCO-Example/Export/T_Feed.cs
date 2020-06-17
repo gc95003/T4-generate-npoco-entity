@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_Feed.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_FeedMetadata))]
+	[MetadataType(typeof(FeedMetadata))]
 	[PrimaryKey("FeedID")]
 	[TableName("[dbo].[T_Feed]")]
     public class T_Feed 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_FeedMetadata{
+		private class FeedMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

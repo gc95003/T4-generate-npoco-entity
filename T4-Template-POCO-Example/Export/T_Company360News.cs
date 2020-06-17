@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_Company360News.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_Company360NewsMetadata))]
+	[MetadataType(typeof(Company360NewsMetadata))]
 	[PrimaryKey("NewsID")]
 	[TableName("[dbo].[T_Company360News]")]
     public class T_Company360News 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_Company360NewsMetadata{
+		private class Company360NewsMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

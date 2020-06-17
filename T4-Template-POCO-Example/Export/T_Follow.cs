@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_Follow.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_FollowMetadata))]
+	[MetadataType(typeof(FollowMetadata))]
 	[PrimaryKey("FollowID")]
 	[TableName("[dbo].[T_Follow]")]
     public class T_Follow 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_FollowMetadata{
+		private class FollowMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_WOMtips.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_WOMtipsMetadata))]
+	[MetadataType(typeof(WOMtipsMetadata))]
 	[PrimaryKey("Id")]
 	[TableName("[dbo].[T_WOMtips]")]
     public class T_WOMtips 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_WOMtipsMetadata{
+		private class WOMtipsMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "标识id，自增量")]

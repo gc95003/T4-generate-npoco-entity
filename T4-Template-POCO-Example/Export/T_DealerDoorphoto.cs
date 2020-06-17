@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_DealerDoorphoto.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_DealerDoorphotoMetadata))]
+	[MetadataType(typeof(DealerDoorphotoMetadata))]
 	[PrimaryKey("PhotoID")]
 	[TableName("[dbo].[T_DealerDoorphoto]")]
     public class T_DealerDoorphoto 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_DealerDoorphotoMetadata{
+		private class DealerDoorphotoMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

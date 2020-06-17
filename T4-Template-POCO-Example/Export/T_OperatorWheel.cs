@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_OperatorWheel.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_OperatorWheelMetadata))]
+	[MetadataType(typeof(OperatorWheelMetadata))]
 	[PrimaryKey("WheelId")]
 	[TableName("[dbo].[T_OperatorWheel]")]
     public class T_OperatorWheel 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_OperatorWheelMetadata{
+		private class OperatorWheelMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

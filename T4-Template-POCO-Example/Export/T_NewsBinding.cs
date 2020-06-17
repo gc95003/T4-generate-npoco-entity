@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_NewsBinding.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_NewsBindingMetadata))]
+	[MetadataType(typeof(NewsBindingMetadata))]
 	[PrimaryKey("RelationID")]
 	[TableName("[dbo].[T_NewsBinding]")]
     public class T_NewsBinding 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_NewsBindingMetadata{
+		private class NewsBindingMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

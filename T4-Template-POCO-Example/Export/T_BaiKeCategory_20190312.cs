@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_BaiKeCategory_20190312.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_BaiKeCategory_20190312Metadata))]
+	[MetadataType(typeof(BaiKeCategory_20190312Metadata))]
 	[PrimaryKey("")]
 	[TableName("[dbo].[T_BaiKeCategory_20190312]")]
     public class T_BaiKeCategory_20190312 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_BaiKeCategory_20190312Metadata{
+		private class BaiKeCategory_20190312Metadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_CircleList.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_CircleListMetadata))]
+	[MetadataType(typeof(CircleListMetadata))]
 	[PrimaryKey("CircleID")]
 	[TableName("[dbo].[T_CircleList]")]
     public class T_CircleList 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_CircleListMetadata{
+		private class CircleListMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "车友圈ID")]

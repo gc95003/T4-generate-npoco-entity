@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_ShopTelCounseling.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_ShopTelCounselingMetadata))]
+	[MetadataType(typeof(ShopTelCounselingMetadata))]
 	[PrimaryKey("Id")]
 	[TableName("[dbo].[T_ShopTelCounseling]")]
     public class T_ShopTelCounseling 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_ShopTelCounselingMetadata{
+		private class ShopTelCounselingMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "自增长主键")]

@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_Dealer.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_DealerMetadata))]
+	[MetadataType(typeof(DealerMetadata))]
 	[PrimaryKey("DealerID")]
 	[TableName("[dbo].[T_Dealer]")]
     public class T_Dealer 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_DealerMetadata{
+		private class DealerMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_BrandShow.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_BrandShowMetadata))]
+	[MetadataType(typeof(BrandShowMetadata))]
 	[PrimaryKey("ShowID")]
 	[TableName("[dbo].[T_BrandShow]")]
     public class T_BrandShow 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_BrandShowMetadata{
+		private class BrandShowMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

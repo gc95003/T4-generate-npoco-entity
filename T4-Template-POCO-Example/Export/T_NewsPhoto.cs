@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_NewsPhoto.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_NewsPhotoMetadata))]
+	[MetadataType(typeof(NewsPhotoMetadata))]
 	[PrimaryKey("PhotoID")]
 	[TableName("[dbo].[T_NewsPhoto]")]
     public class T_NewsPhoto 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_NewsPhotoMetadata{
+		private class NewsPhotoMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

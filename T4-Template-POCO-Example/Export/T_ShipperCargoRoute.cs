@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_ShipperCargoRoute.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_ShipperCargoRouteMetadata))]
+	[MetadataType(typeof(ShipperCargoRouteMetadata))]
 	[PrimaryKey("Id")]
 	[TableName("[dbo].[T_ShipperCargoRoute]")]
     public class T_ShipperCargoRoute 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_ShipperCargoRouteMetadata{
+		private class ShipperCargoRouteMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "货源线路id")]

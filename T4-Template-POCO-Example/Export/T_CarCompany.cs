@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_CarCompany.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_CarCompanyMetadata))]
+	[MetadataType(typeof(CarCompanyMetadata))]
 	[PrimaryKey("CompanyID")]
 	[TableName("[dbo].[T_CarCompany]")]
     public class T_CarCompany 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_CarCompanyMetadata{
+		private class CarCompanyMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

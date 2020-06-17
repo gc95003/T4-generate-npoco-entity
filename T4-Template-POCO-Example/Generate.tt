@@ -84,7 +84,7 @@ namespace <#= classNamespace #><#= nameSchema #>
     /// Represents a <#= table.Name #>.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(<#=table.Name + "Metadata"#>))]
+	[MetadataType(typeof(<#=table.Name.Replace("T_","") + "Metadata"#>))]
 	[PrimaryKey("<#= namePK #>")]
 	[TableName("<#= nombreTabla #>")]
     public class <#= table.Name #> 
@@ -94,7 +94,7 @@ namespace <#= classNamespace #><#= nameSchema #>
         #region Ignore
         #endregion
 		
-		private class <#=table.Name + "Metadata"#>{
+		private class <#=table.Name.Replace("T_","") + "Metadata"#>{
 <# 
         // Keep count so we don't whitespace the last property/column
         int columnCount = table.Columns.Count;
@@ -143,6 +143,7 @@ namespace <#= classNamespace #><#= nameSchema #>
             // Do we insert the space?
             if (i != columnCount)
             {
+
 #>
 <#
             }
@@ -219,7 +220,7 @@ namespace <#= classNamespace #><#= nameSchema #>
 		string connString = "Server="+ sqlServer +";DataBase="+sqlDatabase+";Uid="+sqlLogin+";Pwd="+sqlPassword;
         SqlConnection conn = new SqlConnection(connString);
 
-        string sql = string.Format(@"							USE electric2014
+        string sql = string.Format(@"USE {0}
 							SELECT  
 A.name AS table_name,  
 B.name AS column_name,  
@@ -227,7 +228,7 @@ C.value AS column_description
 FROM sys.tables A  
 INNER JOIN sys.columns B ON B.object_id = A.object_id  
 LEFT JOIN sys.extended_properties C ON C.major_id = B.object_id AND C.minor_id = B.column_id  
-WHERE A.name = '{0}'  AND B.name = '{1}' ",table.Replace("dbo","").Replace("[","").Replace("]","").Replace(".",""),name);
+WHERE A.name = '{1}'  AND B.name = '{2}' ",sqlDatabase,table.Replace("dbo","").Replace("[","").Replace("]","").Replace(".",""),name);
         SqlCommand cmd = new SqlCommand(sql, conn);
         conn.Open();
         SqlDataReader  dr = cmd.ExecuteReader();

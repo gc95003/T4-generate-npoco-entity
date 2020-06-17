@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_WenAnswer.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_WenAnswerMetadata))]
+	[MetadataType(typeof(WenAnswerMetadata))]
 	[PrimaryKey("AnswerID")]
 	[TableName("[dbo].[T_WenAnswer]")]
     public class T_WenAnswer 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_WenAnswerMetadata{
+		private class WenAnswerMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

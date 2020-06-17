@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_CircleTopic.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_CircleTopicMetadata))]
+	[MetadataType(typeof(CircleTopicMetadata))]
 	[PrimaryKey("TopicID")]
 	[TableName("[dbo].[T_CircleTopic]")]
     public class T_CircleTopic 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_CircleTopicMetadata{
+		private class CircleTopicMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "话题id")]

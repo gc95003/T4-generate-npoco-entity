@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_VoteTheme.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_VoteThemeMetadata))]
+	[MetadataType(typeof(VoteThemeMetadata))]
 	[PrimaryKey("ThemeID")]
 	[TableName("[dbo].[T_VoteTheme]")]
     public class T_VoteTheme 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_VoteThemeMetadata{
+		private class VoteThemeMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

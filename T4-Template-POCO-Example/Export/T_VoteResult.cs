@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_VoteResult.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_VoteResultMetadata))]
+	[MetadataType(typeof(VoteResultMetadata))]
 	[PrimaryKey("ResultID")]
 	[TableName("[dbo].[T_VoteResult]")]
     public class T_VoteResult 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_VoteResultMetadata{
+		private class VoteResultMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

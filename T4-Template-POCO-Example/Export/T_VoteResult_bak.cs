@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_VoteResult_bak.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_VoteResult_bakMetadata))]
+	[MetadataType(typeof(VoteResult_bakMetadata))]
 	[PrimaryKey("")]
 	[TableName("[dbo].[T_VoteResult_bak]")]
     public class T_VoteResult_bak 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_VoteResult_bakMetadata{
+		private class VoteResult_bakMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]

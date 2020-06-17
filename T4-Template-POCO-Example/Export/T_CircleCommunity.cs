@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_CircleCommunity.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_CircleCommunityMetadata))]
+	[MetadataType(typeof(CircleCommunityMetadata))]
 	[PrimaryKey("CommunityId")]
 	[TableName("[dbo].[T_CircleCommunity]")]
     public class T_CircleCommunity 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_CircleCommunityMetadata{
+		private class CircleCommunityMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "司机社群id")]

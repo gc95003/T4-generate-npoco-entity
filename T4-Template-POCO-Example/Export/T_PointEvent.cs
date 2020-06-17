@@ -8,7 +8,7 @@ namespace Electric.Domain.Entities
     /// Represents a T_PointEvent.
     /// NOTE: 这个类是从T4模板生成的——你不应该手动修改它。
     /// </summary>
-	[MetadataType(typeof(T_PointEventMetadata))]
+	[MetadataType(typeof(PointEventMetadata))]
 	[PrimaryKey("PointEventID")]
 	[TableName("[dbo].[T_PointEvent]")]
     public class T_PointEvent 
@@ -18,7 +18,7 @@ namespace Electric.Domain.Entities
         #region Ignore
         #endregion
 		
-		private class T_PointEventMetadata{
+		private class PointEventMetadata{
 			[StringLength(4, ErrorMessage = "{0}不能超过4个字符！")]
 			[Required(ErrorMessage = "请填写{0}！")]
 			[Display(Name = "")]
